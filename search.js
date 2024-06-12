@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MovieCard from "./moviecard";
 export default function SearchMovies()
 {
     // states input query, movies
@@ -32,18 +33,7 @@ export default function SearchMovies()
                     }} />
                 <button className="button" type="submit">Search</button>
             </form>
-            <div className="card" key={movies.imdbID}>
-                <img className="card--image"
-                    src={`${movies.Poster}`}
-                    alt={movies.Title + ' poster'}
-                />
-                <div className="card--content">
-                    <h3 className="card--title">{movies.Title}</h3>
-                    <p><small>RELEASE DATE: {movies.Year}</small></p>
-                    <p><small>RATING: {movies.Rated}</small></p>
-                    <p className="card--desc">{movies.Plot}</p>
-                </div>
-            </div>
+            <MovieCard movie={movies}></MovieCard>
         </>
     );
 }

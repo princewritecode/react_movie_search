@@ -27422,6 +27422,8 @@ parcelHelpers.export(exports, "default", ()=>SearchMovies);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _moviecard = require("./moviecard");
+var _moviecardDefault = parcelHelpers.interopDefault(_moviecard);
 var _s = $RefreshSig$();
 function SearchMovies() {
     _s();
@@ -27453,7 +27455,7 @@ function SearchMovies() {
                         children: "Movie Name"
                     }, void 0, false, {
                         fileName: "search.js",
-                        lineNumber: 26,
+                        lineNumber: 27,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27467,7 +27469,7 @@ function SearchMovies() {
                         }
                     }, void 0, false, {
                         fileName: "search.js",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27476,88 +27478,20 @@ function SearchMovies() {
                         children: "Search"
                     }, void 0, false, {
                         fileName: "search.js",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "search.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 13
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "card--image",
-                        src: `${movies.Poster}`,
-                        alt: movies.Title + " poster"
-                    }, void 0, false, {
-                        fileName: "search.js",
-                        lineNumber: 36,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card--content",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                className: "card--title",
-                                children: movies.Title
-                            }, void 0, false, {
-                                fileName: "search.js",
-                                lineNumber: 41,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
-                                    children: [
-                                        "RELEASE DATE: ",
-                                        movies.Year
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "search.js",
-                                    lineNumber: 42,
-                                    columnNumber: 24
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "search.js",
-                                lineNumber: 42,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
-                                    children: [
-                                        "RATING: ",
-                                        movies.Rated
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "search.js",
-                                    lineNumber: 43,
-                                    columnNumber: 24
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "search.js",
-                                lineNumber: 43,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "card--desc",
-                                children: movies.Plot
-                            }, void 0, false, {
-                                fileName: "search.js",
-                                lineNumber: 44,
-                                columnNumber: 21
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "search.js",
-                        lineNumber: 40,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, movies.imdbID, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _moviecardDefault.default), {
+                movie: movies
+            }, void 0, false, {
                 fileName: "search.js",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 13
             }, this)
         ]
@@ -27573,6 +27507,100 @@ $RefreshReg$(_c, "SearchMovies");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["86oZd","1xC6H","6rimH"], "6rimH", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./moviecard":"kzIQn"}],"kzIQn":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a925 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a925.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>MovieCard);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function MovieCard(props) {
+    console.log(props);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "card",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "card--image",
+                    src: `${props.movie.Poster}`,
+                    alt: props.movie.Title + " poster"
+                }, void 0, false, {
+                    fileName: "moviecard.js",
+                    lineNumber: 9,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "card--content",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            className: "card--title",
+                            children: props.movie.Title
+                        }, void 0, false, {
+                            fileName: "moviecard.js",
+                            lineNumber: 14,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
+                                children: [
+                                    "RELEASE DATE: ",
+                                    props.movie.Year
+                                ]
+                            }, void 0, true, {
+                                fileName: "moviecard.js",
+                                lineNumber: 15,
+                                columnNumber: 20
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "moviecard.js",
+                            lineNumber: 15,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("small", {
+                                children: [
+                                    "RATING: ",
+                                    props.movie.Rated
+                                ]
+                            }, void 0, true, {
+                                fileName: "moviecard.js",
+                                lineNumber: 16,
+                                columnNumber: 20
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "moviecard.js",
+                            lineNumber: 16,
+                            columnNumber: 17
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "moviecard.js",
+                    lineNumber: 13,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, props.movie.imdbID, true, {
+            fileName: "moviecard.js",
+            lineNumber: 8,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_c = MovieCard;
+var _c;
+$RefreshReg$(_c, "MovieCard");
+
+  $parcel$ReactRefreshHelpers$a925.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}]},["86oZd","1xC6H","6rimH"], "6rimH", "parcelRequire94c2")
 
 //# sourceMappingURL=index.8cfc62b9.js.map
